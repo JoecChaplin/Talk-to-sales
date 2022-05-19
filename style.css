@@ -1,0 +1,170 @@
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  text-align: center;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255, 255, 255, 0.8);
+  margin:auto;
+  width: 100%;
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  
+  text-align:center;
+  top:50%;
+ 
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+/* SELF NOTE SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 1000px;
+  
+}
+
+#section2 {
+  height: 500px;
+  
+}
+
+#section3 {
+  height: 1000px;
+  
+}
+
+#section4 {
+  height: 1500px;
+  
+}
+
+#section5 {
+  height: 5000px;
+  
+}
+
+#section6 {
+  height: 5000px;
+  
+}
+
+
+Button style
+
+ /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+
+
+/*link style*/
+
+a:link, a:visited {
+  background-color: rgb(128, 236, 160);
+  color: black;
+  border:10px solid green;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: rgb(0, 0, 0);
+}
+
+/*button stlye*/
+
+button {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+ds3 {
+  text-align: right;
+}
+
+
+
+        
